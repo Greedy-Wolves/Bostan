@@ -1,4 +1,3 @@
-from django.shortcuts import render
 from django.http import HttpResponse
 from .models import OfferedCourse
 from rest_framework.response import Response
@@ -15,5 +14,5 @@ def index(request):
 class CoursesByDepartment(APIView):
     def get(self, request, department_id, format=None):
         department_courses = OfferedCourse.objects.filter(course_id__department=department_id).select_related('course')
-        serialized_dp = OfferedCourseSerializer(department_courses, many=True)
-        return Response(serialized_dp.data)
+        serialized_dc = OfferedCourseSerializer(department_courses, many=True)
+        return Response(serialized_dc.data)
