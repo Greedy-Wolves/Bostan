@@ -25,7 +25,7 @@ SECRET_KEY = '(nvx5+in*=-=ncgrpla0)c0y9f389zh-7evz525y4h#(4l1=4!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['srv.winstonlcc.tk']
 
 
 # Application definition
