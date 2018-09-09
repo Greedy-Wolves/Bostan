@@ -39,7 +39,7 @@ class OfferedCourseAdmin(admin.ModelAdmin):
                                                               unit_count=int(dc.unit_count)
                                                               )
                     offered_course = OfferedCourse.objects.create(course=course,
-                                                                  semester='962',
+                                                                  semester='971',
                                                                   group=int(splited_course_code[1]),
                                                                   instructor=dc.instructor,
                                                                   gender_spec=dc.gender
