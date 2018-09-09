@@ -25,7 +25,7 @@ SECRET_KEY = '(nvx5+in*=-=ncgrpla0)c0y9f389zh-7evz525y4h#(4l1=4!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['srv.winstonlcc.tk']
+ALLOWED_HOSTS = ['srv.winstonlcc.tk', 'web']
 
 
 # Application definition
@@ -124,5 +124,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATIC_ROOT = '../static'
 
 CORS_ORIGIN_ALLOW_ALL = True
