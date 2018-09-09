@@ -1,7 +1,7 @@
 # Dockerfile
 
 # FROM directive instructing base image to build upon
-FROM python:2-onbuild
+FROM python:3-onbuild
 
 # COPY startup script into known file location in container
 COPY start.sh /start.sh
