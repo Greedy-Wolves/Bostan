@@ -22,7 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__fil
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '(nvx5+in*=-=ncgrpla0)c0y9f389zh-7evz525y4h#(4l1=4!'
 
-ALLOWED_HOSTS = ['srv.winstonlcc.tk', 'web', '127.0.0.1']
+ALLOWED_HOSTS = ['bostan-ealiakbar.fandogh.cloud', 'srv.winstonlcc.tk', 'web', '127.0.0.1']
 
 
 # Application definition
