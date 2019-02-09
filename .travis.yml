@@ -1,0 +1,7 @@
+language: python
+
+deploy:
+  provider: script
+  script: bash deployment/scripts/deploy-to-fandogh.sh
+  on:
+    branch: develop
