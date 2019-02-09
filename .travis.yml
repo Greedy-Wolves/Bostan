@@ -1,6 +1,8 @@
 language: python
 python:
     - "3.6"
+script:
+  - ./manage.py test
 deploy:
   provider: script
   script: bash deployment/scripts/deploy-to-fandogh.sh
