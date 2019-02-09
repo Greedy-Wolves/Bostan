@@ -4,6 +4,10 @@ python:
 cache: pip
 script:
   - ./manage.py test
+
+before_deploy:
+  - yes | pip install fandogh_cli --upgrade
+
 deploy:
   provider: script
   script: bash deployment/scripts/deploy-to-fandogh.sh
