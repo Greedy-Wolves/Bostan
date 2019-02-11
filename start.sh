@@ -2,6 +2,10 @@
 
 DJANGO_SETTINGS_MODULE=Bostan.settings.prod
 
+python manage.py collectstatic
+python manage.py makemigrations
+python manage.py migrate
+
 # Start Gunicorn processes
 echo Starting Gunicorn.
 exec gunicorn Bostan.wsgi:application \
