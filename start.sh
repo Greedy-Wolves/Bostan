@@ -2,7 +2,7 @@
 
 DJANGO_SETTINGS_MODULE=Bostan.settings.prod
 
-python manage.py collectstatic
+python manage.py collectstatic --noinput
 python manage.py makemigrations
 python manage.py migrate
 
