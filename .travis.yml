@@ -7,11 +7,10 @@ addons:
     packages:
     - jq
 
+before_install:
+  - yes | pip install fandogh_cli --upgrade
 script:
   - ./manage.py test
-
-before_deploy:
-  - yes | pip install fandogh_cli --upgrade
 
 deploy:
   provider: script

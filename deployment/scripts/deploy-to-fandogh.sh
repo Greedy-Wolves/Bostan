@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 curl -s https://api.github.com/repos/Greedy-Wolves/Bostan-UI/releases/latest \
 | jq -r '.assets[].browser_download_url' \
