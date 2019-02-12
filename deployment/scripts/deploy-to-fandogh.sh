@@ -1,9 +1,7 @@
 #!/bin/bash
 
 curl -s https://api.github.com/repos/Greedy-Wolves/Bostan-UI/releases/latest \
-| grep "dist.tar.gz" \
-| cut -d : -f 2,3 \
-| tr -d \" \
+| jq -r '.assets[].browser_download_url' \
 | wget -qi -
 tar xzf dist.tar.gz
 
