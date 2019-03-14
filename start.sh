@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DJANGO_SETTINGS_MODULE=Bostan.settings.prod
+export DJANGO_SETTINGS_MODULE=Bostan.settings.production
 
 python manage.py collectstatic --noinput
 python manage.py makemigrations
