@@ -31,7 +31,7 @@ class OfferedCourseAdmin(admin.ModelAdmin):
             course_file = request.FILES["course_file"]
             for dc in GolestanParser.Course.parse_page(course_file):
                 try:
-                    splited_course_code = dc.code.split('-')
+                    splited_course_code = dc.code.split('_')
 
                     course, __ = Course.objects.get_or_create(id=splited_course_code[0],
                                                               department=splited_course_code[0][:2],

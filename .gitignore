@@ -113,5 +113,8 @@ dmypy.json
 # editor files
 .idea
 
-#PaaS files
+# PaaS files
 .fandogh
+
+# Parser Sample File
+GolestanParser/samples
