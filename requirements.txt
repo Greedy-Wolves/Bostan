@@ -1,5 +1,5 @@
 beautifulsoup4==4.7.1
-Django==2.1.9
+Django==2.1.11
 django-cors-headers==2.4.0
 djangorestframework==3.9.1
 gunicorn==19.9.0
