@@ -1,7 +1,7 @@
 beautifulsoup4==4.7.1
 Django==2.1.9
 django-cors-headers==2.4.0
-djangorestframework==3.9.1
+djangorestframework==3.11.2
 gunicorn==19.9.0
 pytz==2018.9
 soupsieve==1.7.3
